@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  &, &:visited, &:hover, &:active {
+    color: #000000;
+  }
+}
+
+.separator-icon {
+  color: #B2AEAF;
+  padding: 0 15px 0 0;
+}
+
+.breadcrumb-link-container {
+    padding: 0 15px 0 0;
+}

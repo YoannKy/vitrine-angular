@@ -1,0 +1,26 @@
+<section flex fxLayoutAlign="center center">
+  <div class="carousel-wrapper">
+    <mat-carousel
+      timings="250ms ease-in"
+      [autoplay]="true"
+      interval="5000"
+      color="accent"
+      proportion="75"
+      maxWidth="100%"
+      slides="5"
+      [loop]="true"
+      [hideArrows]="true"
+      [hideIndicators]="false"
+      [useKeyboard]="true"
+      [useMouseWheel]="true"
+      orientation="ltr"
+    >
+      <mat-carousel-slide
+        #matCarouselSlide
+        *ngFor="let slide of slides; let i = index"
+        [image]="slide.image"
+        [hideOverlay]="false"
+      ></mat-carousel-slide>
+    </mat-carousel>
+  </div>
+</section>

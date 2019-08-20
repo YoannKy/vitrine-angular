@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./app/shared/style/material-theme.scss";
+
+body {
+  margin: 35px;
+  background-color: #FCFCFC;
+  font-family: fa5-proxima-nova;
+
+  router-outlet {
+    margin-bottom: 0 !important;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1400px) {
+  body {
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

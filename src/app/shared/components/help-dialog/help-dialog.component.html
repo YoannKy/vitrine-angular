@@ -1,0 +1,17 @@
+<div flex fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center, center" fxLayoutGap="10%" class="dialog-container">
+  <mat-icon
+    (click)="onClose()"
+    class="close-dialog-icon"
+    aria-hidden="false"
+    aria-label="close help dialog icon">clear
+  </mat-icon>
+  <img class="help-image" src="assets/images/products/chair-1.jpeg">
+  <div flex fxLayout="column" fxLayoutGap="10%">
+    <h2>Need Help ?</h2>
+    <p>Start a live chat with us now to have us attend to any of your enqueries</p>
+    <div flex fxLayout="row" fxLayout.xs="column" fxLayoutGap="10%" fxLayoutAlign="center, center" class="help-action">
+      <button fxFlex="45%" mat-raised-button color="accent" class="help-button">Start a live chat</button>
+      <span><a>Request for call back</a></span>
+    </div>
+  </div>
+</div>

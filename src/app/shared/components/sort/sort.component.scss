@@ -1,0 +1,16 @@
+.sort-container {
+  span {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .selected {
+    color: #A0C4D2;
+  }
+
+  .order-icon {
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+  }
+}

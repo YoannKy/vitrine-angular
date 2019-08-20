@@ -1,0 +1,15 @@
+.carousel-wrapper {
+  width: 100%;
+}
+
+@media only screen and (min-width : 1224px) {
+  .carousel-wrapper {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width : 1024px) {
+  .carousel-wrapper {
+    width: 65%;
+  }
+}

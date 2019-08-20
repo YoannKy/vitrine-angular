@@ -1,0 +1,18 @@
+<div gdColumns.gt-xs="1fr 1fr 1fr 1fr"
+  gdGap.gt-xs="4%"
+  class="products-container">
+<mat-card *ngFor="let item of items | paginate: config"
+  [@faceInOut]="in" class="product-card">
+    <mat-card-header>
+      <mat-card *ngIf="item.isHot" class="hot-label">HOT</mat-card>
+    </mat-card-header>
+    <img mat-card-image src="{{item.image}}" alt="image of {{item.name}}">
+    <mat-card-content class="product-info">
+      <div flex fxLayout="row"  fxLayout.sm="column" fxLayoutGap="5%">
+        <span class="product-name">{{item.name}}</span>
+        <span class="product-author">{{item.author}}</span>
+      </div>
+      <span class="product-price">{{item.price}}{{item.unit}}</span>
+    </mat-card-content>
+</mat-card>
+</div>

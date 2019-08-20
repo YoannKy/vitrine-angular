@@ -1,0 +1,38 @@
+.products-container {
+  margin: 5%;
+  .product-card {
+    border-radius: 0;
+    background: #FCFCFC;
+    box-shadow: none;
+
+    .product-price {
+      color: #7C7879;
+    }
+
+    .product-author {
+      color: #B2AEAF;
+    }
+
+    .product-info {
+      margin: 30px 0 0 0;
+    }
+
+    .hot-label {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      box-shadow: none;
+      color: white;
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 0;
+      padding: 4px 5%;
+      font-weight: bold;
+    }
+
+    .product-price,
+    .product-name {
+      font-weight: bold;
+    }
+  }
+}

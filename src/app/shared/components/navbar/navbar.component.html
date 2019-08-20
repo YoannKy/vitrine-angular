@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row
+    flex>
+    <span fxFlex="50%">
+      <mat-icon
+        class="hamburger-icon"
+        aria-hidden="false"
+        aria-label="Hamburger icon">reorder
+      </mat-icon>
+    </span>
+    <h1 fxFlex="40%" (click)="goToHome()" class="title">Minim
+    </h1>
+    <span
+      fxFlex="5%"
+      fxShow.sm="false"
+      fxShow.xs="false">account
+    </span>
+    <span
+      fxFlexOffset="5%"
+      fxFlexOffset.xs="10%">
+      <mat-icon
+        class="card-icon"
+        aria-hidden="false"
+        aria-label="Hamburger icon">shopping_basket
+      </mat-icon>
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>

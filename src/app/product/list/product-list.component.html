@@ -1,0 +1,23 @@
+<section flex fxLayout="column" fxLayoutGap="5%">
+  <app-sort [items]="products" [sorts]="sorts" (handleSort)="setNewSort($event)"></app-sort>
+  <div flex fxLayout="row"  fxLayout.xs="column" fxLayoutAlign="start" fxLayoutGap="10%" class="product-list-header">
+    <h2>Home decor</h2>
+    <div flex fxLayout="row" fxLayoutAlign="start" fxLayoutGap="15%">
+      <div *ngFor="let tag of tags" flex fxLayout="row" fxLayoutAlign="center center"  class="tag">
+        <mat-icon
+          class="clear-icon"
+          aria-hidden="false"
+          aria-label="Clear icon">clear
+        </mat-icon>
+         <span>{{ tag }}</span>
+       </div>
+    </div>
+    <button fxFlexOffset="50%"  fxFlexOffset.lt-lg="40%" fxFlexOffset.sm="25%" fxFlexOffset.xs="15%"  mat-stroked-button color="secondary" class="filter-button">Filter by</button>
+  </div>
+  <app-bottom-paginator
+  [items]="products"
+  [id]="'product-paginator'"
+  [gridItemType]="gridItemType"
+  >
+  </app-bottom-paginator>
+</section>

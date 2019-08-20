@@ -1,0 +1,53 @@
+.pagination-previous {
+  padding: 0 15px 0 0;
+}
+
+.pagination-next {
+  padding: 0 0 0 15px;
+}
+
+.pagination-next,
+.pagination-previous {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.divider {
+  height: 30px;
+}
+
+.disabled {
+  cursor: initial;
+  pointer-events: none;
+  a {
+    color: #B2AEAF;
+  }
+}
+
+.items-container {
+  margin: 5%;
+}
+
+.pagination-footer {
+  margin: 0 5%;
+}
+
+.filter-button {
+  box-shadow: none;
+  border: 1px solid #000000;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0 2%;
+}
+
+
+@media only screen and (min-width : 480) {
+  .item-info {
+    margin: 0;
+  }
+
+  .hot-label {
+    padding: 12px;
+  }
+}

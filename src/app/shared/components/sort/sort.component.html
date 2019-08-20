@@ -1,0 +1,24 @@
+<div flex fxLayout="row" fxLayoutGap="5%" fxLayoutAlign="flex-end" class="sort-container">
+  <span>Sort by</span>
+  <span>:</span>
+  <ng-container *ngFor="let sort of sorts; let last = last">
+    <div>
+      <span (click)="onSort(sort.name)" [ngClass]="{'selected': !!sortMapping[sort.name].selected}">{{sort.name}}</span>
+      <ng-container *ngIf="!!sortMapping[sort.name].selected">
+        <mat-icon *ngIf="sortMapping[sort.name].sort"
+          [ngClass]="{'selected': !!sortMapping[sort.name].selected}"
+          class="order-icon"
+          aria-hidden="false"
+          aria-label="Asc icon">expand_less
+        </mat-icon>
+        <mat-icon *ngIf="!sortMapping[sort.name].sort"
+          [ngClass]="{'selected': !!sortMapping[sort.name].selected}"
+          class="order-icon"
+          aria-hidden="false"
+          aria-label="Asc icon">expand_more
+        </mat-icon>
+      </ng-container>
+    </div>
+    <span *ngIf="!last">|</span>
+  </ng-container>
+</div>

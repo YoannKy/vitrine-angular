@@ -1,0 +1,26 @@
+<section  flex fxLayout="row" fxLayoutGap="5%" fxLayout.xs="column" fxLayoutAlign="space-around">
+  <mat-card fxFlex="45%" (click)="goToProducts()" class="category-card">
+    <mat-card-header>
+      <div flex fxLayout="column" fxLayoutAlign="start" class="category-info">
+        <mat-card-title class="category-title">Outdoors</mat-card-title>
+        <mat-card-subtitle class="category-subtitle">SHOP</mat-card-subtitle>
+      </div>
+    </mat-card-header>
+    <img mat-card-image src="assets/images/products/chair-1.jpeg">
+    <mat-card-actions class="category-action">
+      <a routerLink="/products">Shop Outdoors</a>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card fxFlex="45%" (click)="goToProducts()" class="category-card">
+    <mat-card-header>
+      <div flex fxLayout="column" fxLayoutAlign="start" class="category-info">
+        <mat-card-title class="category-title">Indoors</mat-card-title>
+        <mat-card-subtitle class="category-subtitle">SHOP</mat-card-subtitle>
+      </div>
+    </mat-card-header>
+    <img mat-card-image src="assets/images/products/chair-1.jpeg">
+    <mat-card-actions class="category-action">
+      <a  routerLink="/products">Shop Indoors</a>
+    </mat-card-actions>
+  </mat-card>
+</section>

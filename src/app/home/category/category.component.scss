@@ -1,0 +1,36 @@
+.category-card {
+  box-shadow: none;
+  border-radius: 0;
+  background: #FCFCFC;
+  cursor: pointer;
+
+  .category-info,
+  .category-action {
+    position: absolute;
+  }
+
+  .category-info {
+    top: 5%;
+    left: 5%;
+  }
+
+  .category-action {
+    bottom: 15%;
+    right: 10%;
+
+    a {
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-underline-position: under;
+      &, &:visited, &:hover, &:active {
+        color: #000000;
+      }
+    }
+  }
+
+  .category-title {
+    font-weight: bold;
+    font-size: 1.7em;
+  }
+}

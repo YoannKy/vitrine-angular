@@ -1,0 +1,19 @@
+<section
+  flex
+  fxLayout="row"
+  fxLayoutAlign="center flex-end"
+  fxLayout.xs="column"
+  fxLayoutAlign.xs="center"
+  fxLayoutGap="5%">
+  <div fxFlex="25%" fxLayout="column">
+    <h2 class="newsletter-title">Newsletter</h2>
+    <p>Register now  with our newsletter and get the last updates available</p>
+  </div>
+  <div fxFlex="30%" flex.xs="50%" fxLayout="column">
+    <input class="newsletter-input" type="text" name="name"  placeholder="Name">
+    <input class="newsletter-input" type="text" name="email"  placeholder="Email">
+  </div>
+  <div fxLayoutGap="5%" fxFlex="10%">
+    <button mat-raised-button color="accent" class="newsletter-submit-button">Send</button>
+  </div>
+</section>

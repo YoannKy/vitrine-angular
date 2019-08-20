@@ -1,0 +1,11 @@
+<div flex fxLayout="row" fxLayoutAlign="start">
+  <span *ngFor="let breadcrumb of breadcrumbs; let i = index" flex fxLayout="row" fxLayoutAlign="space-between" class="breadcrumb-link-container">
+    <mat-icon
+      *ngIf="i > 0"
+      class="separator-icon"
+      aria-hidden="false"
+      aria-label="separator">remove
+    </mat-icon>
+    <a [routerLink]="[breadcrumb.link]">{{breadcrumb.name}}</a>
+  </span>
+</div>
